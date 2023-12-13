@@ -1,0 +1,97 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<style>
+	.grid-container {
+		display: grid;
+		grid-template-rows: 1fr 3fr 1fr;
+		grid-template-columns: 1fr 3fr 1fr;
+		gap:2px 2px;	
+		}
+	#item1{
+	grid-column:1/4;
+		}
+
+	#item2{
+	grid-column:3/4;
+		}
+	
+	.red {
+		background:magenta;
+		font-size:60px;
+		text-align:center;
+		border:5px double black;
+	
+	}
+	.green {
+		background:green;
+		font-size:30px;
+		text-align:center;
+		border:5px dotted black;
+	}
+	.blue {
+		background:cyan;
+		font-size:20px;
+		text-align:center;
+		border:5px dashed black;
+	}
+	.yellow {
+		background:yellow;
+		font-size:30px;
+		text-align:center;
+		border:5px dotted black;
+	}
+	.violet {
+		background:pink;
+		font-size:60px;
+		text-align:center;
+		border:5px double black;
+	}
+	@media only screen and (max-width:600px){
+	
+	.grid-container {
+		display: grid;
+		grid-template-rows: 1fr 3fr 1fr 1fr;
+		grid-template-columns: 1fr 3fr;
+	}
+	#item1{
+	grid-column:span 2;
+	}
+	#item2{
+	grid-column:span 2;
+	}
+	@media only screen and (max-width:300px){
+	
+	.grid-container {
+		display: grid;
+		grid-template-rows: 2fr 2fr 3fr 2fr 2fr;
+	   grid-template-columns: 3fr;
+	}
+	#item1{
+	grid-column:1/2;
+	}
+	#item2{
+	grid-column:1/2;
+	}
+	
+		
+	</style>
+		<title> Largo </title>
+	</head>
+<body>
+<div class=grid-container>
+	<div id=item1 class=red> My Space </div>
+	<div class=green> <p> <a href="about me.html"> About Me</a> <a href="favorite foods.html"> Favorite Foods</a>
+<a href="favorite songs.html"> Favorite Songs</a>	</p> </div>
+	<div  class=blue> Favorite Foods <br>  <img src=sisig.jpg width=150  height=150>	<img src="buffalo wings.jpg" width=150  height=150> 
+	<img src=lasagna.jpg width=150  height=150> <img src=burger.jpg width=150  height=150></div>
+	<div id=item2 class=yellow><p> <a href="hobbies.html"> Hobbies</a> <br> <a href="index.html"> Main</a></p> </div>
+	<div id=item1 class=violet> Created by: Axel Carlo O. Largo_9-Versiglia </div>
+	
+</div>
+
+
+
+
+</body>
+</html>
